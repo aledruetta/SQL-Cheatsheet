@@ -85,3 +85,25 @@ WHERE column_name LIKE 'pattern';
 
 - `%` Qualquer sequência de caracteres
 - `_` Um único caractere
+
+## AGREGATE FUNCTIONS
+
+### AVG, ROUND
+
+```sql
+SELECT AVG(column_name) FROM table_name;
+SELECT ROUND(AVG(column_name),2) FROM table_name;
+```
+
+### MIN, MAX
+
+```sql
+SELECT MIN(column_name) FROM table_name;
+SELECT MAX(column_name) FROM table_name;
+```
+
+### SUM
+
+```sql
+SELECT SUM(column_name) FROM table_name;
+```
