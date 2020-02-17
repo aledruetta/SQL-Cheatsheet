@@ -137,7 +137,7 @@ HAVING condition;
 > 
 > `HAVING` atua **após** `GROUP BY`
 
-Exemplo:
+Exemplo: Alunos das disciplinas Cálculo 1 e 2 com mais do que 5 faltas.
 
 ```sql
 SELECT nome, disciplina, COUNT(ausente)
