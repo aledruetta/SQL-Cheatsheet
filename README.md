@@ -123,3 +123,26 @@ SELECT product_id, SUM(qty)
 FROM sales
 GROUP BY product_id;
 ```
+
+### HAVING
+
+```sql
+SELECT column1, aggregate_func(column2)
+FROM table_name
+GROUP BY column1
+HAVING condition;
+```
+
+> `WHERE` atua **antes** do `GROUP BY`
+> 
+> `HAVING` atua **após** `GROUP BY`
+
+Exemplo:
+
+```sql
+SELECT nome, disciplina, COUNT(ausente)
+FROM aluno
+WHERE disciplina IN ('Cálculo 1', 'Cálculo 2')
+GROUP BY nome
+HAVING COUNT(ausente) > 5;
+```
