@@ -86,7 +86,7 @@ WHERE column_name LIKE 'pattern';
 - `%` Qualquer sequência de caracteres
 - `_` Um único caractere
 
-## AGREGATE FUNCTIONS
+## AGGREGATE FUNCTIONS
 
 ### AVG, ROUND
 
@@ -106,4 +106,20 @@ SELECT MAX(column_name) FROM table_name;
 
 ```sql
 SELECT SUM(column_name) FROM table_name;
+```
+
+### GROUP BY
+
+```sql
+SELECT column1, aggregate_func(column2)
+FROM table_name
+GROUP BY column1;
+```
+
+Exemplo: Quantidade vendida de cada produto
+
+```sql
+SELECT product_id, SUM(qty)
+FROM sales
+GROUP BY product_id;
 ```
