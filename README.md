@@ -52,7 +52,7 @@ LIMIT 5;
 
 ```sql
 SELECT ... FROM ...
-ORDER BY column_name <ASC|DESC>;
+ORDER BY column1 <ASC|DESC>, column2 <ASC|DESC>, ...;
 ```
 
 ### BETWEEN
