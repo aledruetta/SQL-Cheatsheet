@@ -146,3 +146,13 @@ WHERE disciplina IN ('Cálculo 1', 'Cálculo 2')
 GROUP BY nome
 HAVING COUNT(ausente) > 5;
 ```
+
+### AS
+
+```sql
+SELECT column1, aggregate_func(column2) AS alias
+FROM table_name
+GROUP BY column1;
+```
+
+## JOINS
