@@ -156,3 +156,23 @@ GROUP BY column1;
 ```
 
 ## JOINS
+
+### INNER JOIN
+
+```sql
+SELECT
+table1.pk, table1.column_a,
+table2.fk, table2.column_b
+FROM table1
+INNER JOIN table2 ON table1.pk = table2.fk;
+```
+
+Exemplo:
+
+```sql
+SELECT
+aluno.id, aluno.nome,
+notas.aluno_id, notas.final
+FROM aluno
+INNER JOIN notas ON aluno.id = notas.aluno_id;
+```
